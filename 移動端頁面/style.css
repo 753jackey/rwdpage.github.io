@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+}
+.w,.top-bar,.banner,.menu,.course-list{
+    /*設置寬度 693除以40px*/
+    width:17.325rem;
+    margin:0 auto;
+}
+/*設置根元素*/
+html{
+    /*底下的值是用100vw(一個視口大小)除以750px(設計圖寬度)乘以40去計算的*/
+    font-size:5.33333333vw;
+    background-color:#eff0f4;
+}
+a{
+    /*去除連結的下劃線*/
+    text-decoration:none;
+}
+/*設置頭部header*/
+.top-bar{
+    /*設置彈性容器*/
+    display:flex;
+    /*設置高度 175除以40px*/
+    height:4.375rem;
+    line-height:4.375rem;
+    /*設置對齊方式*/
+    justify-content:space-between;
+    /*設置輔軸的垂直置中*/
+    align-items:center;
+}
+.top-bar a{
+    color:#24253d;
+    /*設置字體大小 50除以40*/
+    font-size:1.25rem;
+}
+.top-bar a i{
+    color:#999;
+    /*設置圖標大小 40px除以40*/
+    font-size:1rem;
+}
+/*設置中間的圖片大小*/
+.banner img{
+    width:100%;
+}
+/*設置中間4個menu*/
+.menu{
+    /*設置高度 329px除以40*/
+    height:8.225rem;
+    /*設置彈性元素*/
+    display:flex;
+    /*設置換行*/
+    flex-flow:row wrap;
+    /*設置主軸上對齊方式*/
+    justify-content:space-between;
+    /*設置輔軸上對齊方式*/
+    align-content:space-evenly;
+}
+.menu a{
+    /*設置寬度 327px除以40*/
+    width:8.175rem;
+    /*設置高度 104px除以40*/
+    height:2.6rem;
+    /*設置行高*/
+    line-height:2.6rem;
+    color:white;
+    /*設置圓角 10px除以40*/
+    border-radius:0.25rem;
+}
+.menu a i{
+    /*設置左右外邊距 20px除以40 38px除以40*/
+    margin:0 0.5rem 0 0.95rem;
+}
+/*設置中間4個menu的背景顏色*/
+.menu .course{
+    background-color:#f97053;
+}
+.menu .star{
+    background-color:#cd6efe;
+}
+.menu .sub{
+    background-color:#fe4479;
+} 
+.menu .download{
+    background-color:#1bc4fb;
+}
+
+/*設置課程列表容器*/
+.course-list{
+    /*設置高度 438px除以40*/
+    height:9.85rem;
+    /*設置為彈性容器*/
+    display:flex;
+    /*設置彈性容器由縱向(由上而下)排列*/
+    flex-flow:column;
+    /*設置主軸(因為容器已更改成縱向的,所以主軸現在是由上而下)的空白處平均分布到元素之間*/
+    justify-content:space-between;
+    /*設置下外邊距 46px除以40*/
+    margin-bottom:1.15rem;
+}
+.course-list .title{
+    /*設置彈性容器*/
+    display:flex;
+    /*在主軸上設置兩端對齊*/
+    justify-content:space-between;
+    /*在輔軸上置中*/
+    align-items:center;
+}
+.course-list .title h2{
+    /*設置字體大小 33px除以40 */
+    font-size:0.825rem;
+    color:#24253d;
+    /*設置左邊框*/
+    border-left:2px solid #3a84ff;
+    /*設置左內邊距*/
+    padding-left:4px;
+}
+.course-list .title a{
+    /*設置字體大小 28px除以40*/
+    font-size:.7rem;
+    color:#656565;
+}
+
+/*設置課程列表的項*/
+.item-list{
+    /*設置寬度 720px除以40*/
+    width:18rem;
+    /*設置為彈性容器*/
+    display:flex;
+    /*設置讓每個項目可以滾動*/
+    overflow:auto;
+}
+.item{
+    /*把box屬性更改成border-box(邊框外邊距內邊距內容區大小算在一起)*/
+    box-sizing:border-box;
+    /*設置寬度 320px除以40*/
+    width:8rem;
+    /*設置高度 324px除以40*/
+    height:8.1rem;
+    /*設置左右內邊距 22px除以40*/
+    padding:0 0.55rem;
+    background-color:#fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    /*設置邊框圓角*/
+    border-radius:5px;
+    /*設置為彈性容器*/
+    display:flex;
+    /*設置彈性容器為縱向排列*/
+    flex-flow:column;
+    /*設置彈性元素不要縮進去*/
+    flex:none;
+    /*設置主軸的空白處分布到元素單側*/
+    justify-content:space-evenly;
+    /*設置右外邊距 24px除以40*/
+    margin-right:0.6rem;
+}
+/*設置圖片寬度*/
+.item img{
+    width:100%;
+    /*設置垂直對齊方式靠上*/
+    vertical-align:top
+}
+/*設置課程標題*/
+.item .course-title{
+    /*設置字體大小 32px除以40*/
+    font-size:0.8rem;
+    color:#24253d;
+}
+/*設置教師訊息*/
+.item .user-info{
+    /*設置為彈性容器*/
+    display:flex;
+    /*以輔軸(由上而下)置中對齊*/
+    align-items:center;
+}
+/*設置頭像*/
+.item .avatar{
+    /*設置寬度跟高度都是 42px除以40*/
+    width:1.05rem;
+    height:1.05rem;
+}
+/*設置教師的名子*/
+.item .nickname{
+    /*設置左外邊距*/
+    margin-left:6px;
+    /*設置字體大小 24px除以40*/
+    font-size:0.6rem;
+    color:#969393;
+}
+
+/*# sourceMappingURL=./style.css.map */
